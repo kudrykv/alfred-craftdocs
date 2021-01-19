@@ -17,7 +17,8 @@ GUI applications do not inherit `$PATH`, and the workflow searches though these 
 
 ## Install
 
-Download the latest release and double-click it.
+[Download](https://github.com/kudrykv/alfred-craftdocs/releases/download/v0.1.1/CraftDocs.alfredworkflow)
+the latest release and double-click it.
 Alfred will proceed with installation.
 
 Using Alfred, run `craftdo-init` command to set up the workflow.

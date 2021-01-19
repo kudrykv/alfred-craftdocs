@@ -11,7 +11,7 @@ try {
 let argv = process.argv.slice(2);
 let spaceID = argv.shift();
 
-const filepath = `${os.homedir()}/Library/Containers/com.lukilabs.lukiapp/Data/Library/Application Support/com.lukilabs.lukiapp/${spaceID}.realm`;
+const filepath = `${os.homedir()}/Library/Containers/com.lukilabs.lukiapp/Data/Library/Application Support/com.lukilabs.lukiapp/workflow_${spaceID}.realm`;
 const conn = new Realm(filepath);
 
 const BLOCK_DATA_MODEL = 'BlockDataModel';
