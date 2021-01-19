@@ -10,6 +10,6 @@ if [ -z "$_npmpath" ]; then
   exit
 fi
 
-echo 0
+echo -n 0
 
 npm i
