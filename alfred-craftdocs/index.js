@@ -23,7 +23,7 @@ const todayNoteTitle = dateformat(new Date(), process.env.TODAY_PATTERN);
 const filepath = `${os.homedir()}/Library/Containers/com.lukilabs.lukiapp/Data/Library/Application Support/com.lukilabs.lukiapp/workflow_${spaceID}.realm`;
 const conn = new Realm(filepath);
 
-let items;
+let items = [];
 let listFilter = true;
 
 let workflowCfg = {};
@@ -38,7 +38,19 @@ switch (cmd) {
     break;
 
   case 'cdo':
-    items = [{title: 'today', subtitle: 'Jump to or create note ' + todayNoteTitle, arg: 'today'}];
+    workflowCfg.default_folder
+      ? items.push({
+        title: 'today - create a note for today',
+        subtitle: 'Jump to or create ' + todayNoteTitle + ' note in ' + workflowCfg.default_folder.name,
+        arg: 'today'
+      })
+      : items.push({
+        title: 'today - create a note for today',
+        subtitle: 'Setup the default folder first',
+        arg: 'today',
+        valid: false
+      });
+
     break;
 
   case 'config-select':
