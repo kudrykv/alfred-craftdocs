@@ -47,4 +47,4 @@ else
   fi
 fi
 
-node alfred-craftdocs/index.js "$_spaceID" "$@"
+node alfred-craftdocs/index.js "$_spaceID" search "$@"
