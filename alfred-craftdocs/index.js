@@ -18,7 +18,7 @@ const argv = process.argv.slice(2);
 const spaceID = argv.shift();
 const cmd = argv.shift();
 
-const title = dateformat(new Date(), process.env.TODAY_PATTERN);
+const todayNoteTitle = dateformat(new Date(), process.env.TODAY_PATTERN);
 
 const filepath = `${os.homedir()}/Library/Containers/com.lukilabs.lukiapp/Data/Library/Application Support/com.lukilabs.lukiapp/workflow_${spaceID}.realm`;
 const conn = new Realm(filepath);
@@ -26,13 +26,19 @@ const conn = new Realm(filepath);
 let items;
 let listFilter = true;
 
+let workflowCfg = {};
+if (fs.existsSync('./workflow_config.json')) {
+  let buff = fs.readFileSync('./workflow_config.json');
+  workflowCfg = JSON.parse(buff.toString());
+}
+
 switch (cmd) {
   case 'search':
     items = search({conn, spaceID, argv})
     break;
 
   case 'cdo':
-    items = [{title: 'today', subtitle: 'Jump to or create note ' + title, arg: 'today'}];
+    items = [{title: 'today', subtitle: 'Jump to or create note ' + todayNoteTitle, arg: 'today'}];
     break;
 
   case 'config-select':
@@ -82,10 +88,10 @@ switch (cmd) {
       break;
     }
 
-    const block = findDocument({conn, folderID: cfg.default_folder, title});
+    const block = findDocument({conn, folderID: cfg.default_folder.id, title: todayNoteTitle});
 
     if (!block) {
-      process.stdout.write(`craftdocs://x-callback-url/createdocument?spaceId=${spaceID}&folderId=${cfg.default_folder}&title=${title}&content=`);
+      process.stdout.write(`craftdocs://x-callback-url/createdocument?spaceId=${spaceID}&folderId=${cfg.default_folder.id}&title=${todayNoteTitle}&content=`);
     } else {
       process.stdout.write(`craftdocs://open?blockId=${block.id}&spaceId=${spaceID}`);
     }

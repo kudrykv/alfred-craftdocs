@@ -13,7 +13,7 @@ module.exports = ({conn, argv}) => {
 
     items.push({
       title: fdm.name,
-      arg: JSON.stringify({default_folder: fdm.id}),
+      arg: JSON.stringify({default_folder: {id: fdm.id, name: fdm.name}}),
       autocomplete: fdm.name
     })
   }
