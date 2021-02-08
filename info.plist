@@ -8,6 +8,73 @@
 	<string>Productivity</string>
 	<key>connections</key>
 	<dict>
+		<key>0BEFA128-2DB7-4BAE-9E29-EA404D4AEE61</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>9BFF11E2-F02E-4964-89EF-F56FFD5023F6</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>sourceoutputuid</key>
+				<string>BD16AC78-B211-4756-82B4-5B695B700716</string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>4E6BADC0-25E0-4BA8-9D6B-A12D1A806C75</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>E5AAECBB-5EE2-49FF-A6CE-960CF11CF5D3</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>54DED774-88D5-4B90-A0EC-5398FD47C6AF</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>C6750802-4988-4675-A676-BA7A17E4FEF9</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>61FD2564-E7F5-417F-8F91-530062FAC018</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>0BEFA128-2DB7-4BAE-9E29-EA404D4AEE61</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>694B256E-086E-482F-A38E-F33BE8073D2E</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>4E6BADC0-25E0-4BA8-9D6B-A12D1A806C75</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
 		<key>7A359505-AEF9-4F80-BCD5-5C2B3C6435C3</key>
 		<array>
 			<dict>
@@ -46,6 +113,19 @@
 				<false/>
 			</dict>
 		</array>
+		<key>9BFF11E2-F02E-4964-89EF-F56FFD5023F6</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>3A90E9C4-987A-42CF-AE89-CBE6D35CB22A</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
 		<key>C6916E88-54C2-4A84-B302-C007FA7C61C8</key>
 		<array>
 			<dict>
@@ -61,6 +141,19 @@
 			<dict>
 				<key>destinationuid</key>
 				<string>1D55AFF8-5B0B-473C-9C31-5E79E7D1DC72</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>E5AAECBB-5EE2-49FF-A6CE-960CF11CF5D3</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>54DED774-88D5-4B90-A0EC-5398FD47C6AF</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -93,78 +186,6 @@
 	<string>Craft Docs</string>
 	<key>objects</key>
 	<array>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>alfredfiltersresults</key>
-				<false/>
-				<key>alfredfiltersresultsmatchmode</key>
-				<integer>0</integer>
-				<key>argumenttreatemptyqueryasnil</key>
-				<true/>
-				<key>argumenttrimmode</key>
-				<integer>0</integer>
-				<key>argumenttype</key>
-				<integer>1</integer>
-				<key>escaping</key>
-				<integer>0</integer>
-				<key>keyword</key>
-				<string>cs</string>
-				<key>queuedelaycustom</key>
-				<integer>3</integer>
-				<key>queuedelayimmediatelyinitially</key>
-				<true/>
-				<key>queuedelaymode</key>
-				<integer>0</integer>
-				<key>queuemode</key>
-				<integer>1</integer>
-				<key>runningsubtext</key>
-				<string>Running...</string>
-				<key>script</key>
-				<string></string>
-				<key>scriptargtype</key>
-				<integer>1</integer>
-				<key>scriptfile</key>
-				<string>run.sh</string>
-				<key>subtext</key>
-				<string></string>
-				<key>title</key>
-				<string>Search for documents in Craft</string>
-				<key>type</key>
-				<integer>8</integer>
-				<key>withspace</key>
-				<true/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.input.scriptfilter</string>
-			<key>uid</key>
-			<string>7A359505-AEF9-4F80-BCD5-5C2B3C6435C3</string>
-			<key>version</key>
-			<integer>3</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>concurrently</key>
-				<false/>
-				<key>escaping</key>
-				<integer>102</integer>
-				<key>script</key>
-				<string>open "{query}"</string>
-				<key>scriptargtype</key>
-				<integer>0</integer>
-				<key>scriptfile</key>
-				<string></string>
-				<key>type</key>
-				<integer>0</integer>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.script</string>
-			<key>uid</key>
-			<string>EC8B284B-3008-471C-AF51-4DCA8AA9416D</string>
-			<key>version</key>
-			<integer>2</integer>
-		</dict>
 		<dict>
 			<key>config</key>
 			<dict>
@@ -281,6 +302,27 @@ echo 0</string>
 				<key>removeextension</key>
 				<false/>
 				<key>text</key>
+				<string>Initialization started. The notify will pop up when it is complete.</string>
+				<key>title</key>
+				<string>Craft Docs Workflow</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.notification</string>
+			<key>uid</key>
+			<string>1D55AFF8-5B0B-473C-9C31-5E79E7D1DC72</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>lastpathcomponent</key>
+				<false/>
+				<key>onlyshowifquerypopulated</key>
+				<false/>
+				<key>removeextension</key>
+				<false/>
+				<key>text</key>
 				<string>Initialization complete!</string>
 				<key>title</key>
 				<string>Craft Docs Workflow</string>
@@ -295,6 +337,216 @@ echo 0</string>
 		<dict>
 			<key>config</key>
 			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>script</key>
+				<string>open "{query}"</string>
+				<key>scriptargtype</key>
+				<integer>0</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>type</key>
+				<integer>0</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>EC8B284B-3008-471C-AF51-4DCA8AA9416D</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>alfredfiltersresults</key>
+				<false/>
+				<key>alfredfiltersresultsmatchmode</key>
+				<integer>0</integer>
+				<key>argumenttreatemptyqueryasnil</key>
+				<true/>
+				<key>argumenttrimmode</key>
+				<integer>0</integer>
+				<key>argumenttype</key>
+				<integer>1</integer>
+				<key>escaping</key>
+				<integer>0</integer>
+				<key>keyword</key>
+				<string>cs</string>
+				<key>queuedelaycustom</key>
+				<integer>3</integer>
+				<key>queuedelayimmediatelyinitially</key>
+				<true/>
+				<key>queuedelaymode</key>
+				<integer>0</integer>
+				<key>queuemode</key>
+				<integer>1</integer>
+				<key>runningsubtext</key>
+				<string>Running...</string>
+				<key>script</key>
+				<string></string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string>search.sh</string>
+				<key>subtext</key>
+				<string></string>
+				<key>title</key>
+				<string>Search for documents in Craft</string>
+				<key>type</key>
+				<integer>8</integer>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.scriptfilter</string>
+			<key>uid</key>
+			<string>7A359505-AEF9-4F80-BCD5-5C2B3C6435C3</string>
+			<key>version</key>
+			<integer>3</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>script</key>
+				<string>#!/usr/bin/env bash
+set -e
+
+. preflight.sh
+
+node alfred-craftdocs/index.js "$_spaceID" today "$TODAY_PATTERN"</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>type</key>
+				<integer>0</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>9BFF11E2-F02E-4964-89EF-F56FFD5023F6</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argumenttrimmode</key>
+				<integer>0</integer>
+				<key>argumenttype</key>
+				<integer>1</integer>
+				<key>fixedorder</key>
+				<false/>
+				<key>items</key>
+				<string>[{"title":"today","arg":"today"}]</string>
+				<key>keyword</key>
+				<string>cdo</string>
+				<key>runningsubtext</key>
+				<string></string>
+				<key>subtext</key>
+				<string></string>
+				<key>title</key>
+				<string></string>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.listfilter</string>
+			<key>uid</key>
+			<string>61FD2564-E7F5-417F-8F91-530062FAC018</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>script</key>
+				<string>open "$@"</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>type</key>
+				<integer>0</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>3A90E9C4-987A-42CF-AE89-CBE6D35CB22A</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>conditions</key>
+				<array>
+					<dict>
+						<key>inputstring</key>
+						<string>{query}</string>
+						<key>matchcasesensitive</key>
+						<false/>
+						<key>matchmode</key>
+						<integer>0</integer>
+						<key>matchstring</key>
+						<string>today</string>
+						<key>outputlabel</key>
+						<string></string>
+						<key>uid</key>
+						<string>BD16AC78-B211-4756-82B4-5B695B700716</string>
+					</dict>
+				</array>
+				<key>elselabel</key>
+				<string>else</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.conditional</string>
+			<key>uid</key>
+			<string>0BEFA128-2DB7-4BAE-9E29-EA404D4AEE61</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>script</key>
+				<string>#!/usr/bin/env bash
+set -e
+
+. preflight.sh
+
+node alfred-craftdocs/index.js "$_spaceID" save-config "$@"</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>type</key>
+				<integer>0</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>54DED774-88D5-4B90-A0EC-5398FD47C6AF</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
 				<key>lastpathcomponent</key>
 				<false/>
 				<key>onlyshowifquerypopulated</key>
@@ -302,14 +554,116 @@ echo 0</string>
 				<key>removeextension</key>
 				<false/>
 				<key>text</key>
-				<string>Initialization started. The notify will pop up when it is complete.</string>
+				<string></string>
 				<key>title</key>
-				<string>Craft Docs Workflow</string>
+				<string>Config saved!</string>
 			</dict>
 			<key>type</key>
 			<string>alfred.workflow.output.notification</string>
 			<key>uid</key>
-			<string>1D55AFF8-5B0B-473C-9C31-5E79E7D1DC72</string>
+			<string>C6750802-4988-4675-A676-BA7A17E4FEF9</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>alfredfiltersresults</key>
+				<false/>
+				<key>alfredfiltersresultsmatchmode</key>
+				<integer>0</integer>
+				<key>argumenttreatemptyqueryasnil</key>
+				<true/>
+				<key>argumenttrimmode</key>
+				<integer>0</integer>
+				<key>argumenttype</key>
+				<integer>1</integer>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>queuedelaycustom</key>
+				<integer>3</integer>
+				<key>queuedelayimmediatelyinitially</key>
+				<true/>
+				<key>queuedelaymode</key>
+				<integer>0</integer>
+				<key>queuemode</key>
+				<integer>1</integer>
+				<key>runningsubtext</key>
+				<string></string>
+				<key>script</key>
+				<string>#!/usr/bin/env bash
+set -e
+
+. preflight.sh
+
+node alfred-craftdocs/index.js "$_spaceID" config $config_field $@
+</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>subtext</key>
+				<string></string>
+				<key>title</key>
+				<string></string>
+				<key>type</key>
+				<integer>0</integer>
+				<key>withspace</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.scriptfilter</string>
+			<key>uid</key>
+			<string>E5AAECBB-5EE2-49FF-A6CE-960CF11CF5D3</string>
+			<key>version</key>
+			<integer>3</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argumenttrimmode</key>
+				<integer>0</integer>
+				<key>argumenttype</key>
+				<integer>1</integer>
+				<key>fixedorder</key>
+				<false/>
+				<key>items</key>
+				<string>[{"title":"Default folder","arg":"default_folder"}]</string>
+				<key>keyword</key>
+				<string>cdo-config</string>
+				<key>runningsubtext</key>
+				<string></string>
+				<key>subtext</key>
+				<string></string>
+				<key>title</key>
+				<string></string>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.listfilter</string>
+			<key>uid</key>
+			<string>694B256E-086E-482F-A38E-F33BE8073D2E</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argument</key>
+				<string></string>
+				<key>passthroughargument</key>
+				<false/>
+				<key>variables</key>
+				<dict>
+					<key>config_field</key>
+					<string>{query}</string>
+				</dict>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.argument</string>
+			<key>uid</key>
+			<string>4E6BADC0-25E0-4BA8-9D6B-A12D1A806C75</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
@@ -318,65 +672,131 @@ echo 0</string>
 	<string></string>
 	<key>uidata</key>
 	<dict>
+		<key>0BEFA128-2DB7-4BAE-9E29-EA404D4AEE61</key>
+		<dict>
+			<key>xpos</key>
+			<integer>280</integer>
+			<key>ypos</key>
+			<integer>475</integer>
+		</dict>
 		<key>1D55AFF8-5B0B-473C-9C31-5E79E7D1DC72</key>
 		<dict>
 			<key>xpos</key>
 			<integer>320</integer>
 			<key>ypos</key>
-			<integer>385</integer>
+			<integer>175</integer>
+		</dict>
+		<key>3A90E9C4-987A-42CF-AE89-CBE6D35CB22A</key>
+		<dict>
+			<key>xpos</key>
+			<integer>505</integer>
+			<key>ypos</key>
+			<integer>455</integer>
 		</dict>
 		<key>3F51AE90-DF48-4EBC-B316-35FB418BAFE7</key>
 		<dict>
 			<key>xpos</key>
 			<integer>555</integer>
 			<key>ypos</key>
-			<integer>265</integer>
+			<integer>55</integer>
+		</dict>
+		<key>4E6BADC0-25E0-4BA8-9D6B-A12D1A806C75</key>
+		<dict>
+			<key>xpos</key>
+			<integer>280</integer>
+			<key>ypos</key>
+			<integer>625</integer>
+		</dict>
+		<key>54DED774-88D5-4B90-A0EC-5398FD47C6AF</key>
+		<dict>
+			<key>xpos</key>
+			<integer>500</integer>
+			<key>ypos</key>
+			<integer>595</integer>
+		</dict>
+		<key>61FD2564-E7F5-417F-8F91-530062FAC018</key>
+		<dict>
+			<key>xpos</key>
+			<integer>130</integer>
+			<key>ypos</key>
+			<integer>455</integer>
+		</dict>
+		<key>694B256E-086E-482F-A38E-F33BE8073D2E</key>
+		<dict>
+			<key>xpos</key>
+			<integer>130</integer>
+			<key>ypos</key>
+			<integer>595</integer>
 		</dict>
 		<key>7A359505-AEF9-4F80-BCD5-5C2B3C6435C3</key>
 		<dict>
 			<key>xpos</key>
 			<integer>130</integer>
 			<key>ypos</key>
-			<integer>70</integer>
+			<integer>320</integer>
 		</dict>
 		<key>81D4901E-77A6-40F1-9564-88EE46A4B5C3</key>
 		<dict>
 			<key>xpos</key>
 			<integer>470</integer>
 			<key>ypos</key>
-			<integer>285</integer>
+			<integer>75</integer>
+		</dict>
+		<key>9BFF11E2-F02E-4964-89EF-F56FFD5023F6</key>
+		<dict>
+			<key>xpos</key>
+			<integer>355</integer>
+			<key>ypos</key>
+			<integer>455</integer>
 		</dict>
 		<key>A40516EA-67B9-42EB-A330-D3161752B676</key>
 		<dict>
 			<key>xpos</key>
 			<integer>555</integer>
 			<key>ypos</key>
-			<integer>385</integer>
+			<integer>175</integer>
+		</dict>
+		<key>C6750802-4988-4675-A676-BA7A17E4FEF9</key>
+		<dict>
+			<key>xpos</key>
+			<integer>650</integer>
+			<key>ypos</key>
+			<integer>595</integer>
 		</dict>
 		<key>C6916E88-54C2-4A84-B302-C007FA7C61C8</key>
 		<dict>
 			<key>xpos</key>
 			<integer>130</integer>
 			<key>ypos</key>
-			<integer>265</integer>
+			<integer>55</integer>
+		</dict>
+		<key>E5AAECBB-5EE2-49FF-A6CE-960CF11CF5D3</key>
+		<dict>
+			<key>xpos</key>
+			<integer>350</integer>
+			<key>ypos</key>
+			<integer>595</integer>
 		</dict>
 		<key>EA93CFF4-E14C-4988-98C5-CF660B100672</key>
 		<dict>
 			<key>xpos</key>
 			<integer>320</integer>
 			<key>ypos</key>
-			<integer>265</integer>
+			<integer>55</integer>
 		</dict>
 		<key>EC8B284B-3008-471C-AF51-4DCA8AA9416D</key>
 		<dict>
 			<key>xpos</key>
 			<integer>320</integer>
 			<key>ypos</key>
-			<integer>70</integer>
+			<integer>320</integer>
 		</dict>
 	</dict>
-	<key>variablesdontexport</key>
-	<array/>
+	<key>variables</key>
+	<dict>
+		<key>TODAY_PATTERN</key>
+		<string>YYYY-mm-dd</string>
+	</dict>
 	<key>version</key>
 	<string>0.1.1</string>
 	<key>webaddress</key>

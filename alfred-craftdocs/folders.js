@@ -1,5 +1,5 @@
-module.exports.folders = ({conn, spaceID, argv}) => {
-  conn.objects('FolderDataModel')
+module.exports = ({conn, argv}) => {
+  const entries = conn.objects('FolderDataModel')
     .filtered('name contains[c] $0 limit(40)', argv.join(' '))
     .entries();
 
@@ -13,7 +13,8 @@ module.exports.folders = ({conn, spaceID, argv}) => {
 
     items.push({
       title: fdm.name,
-      arg: fdm.name,
+      arg: JSON.stringify({default_folder: fdm.id}),
+      autocomplete: fdm.name
     })
   }
 

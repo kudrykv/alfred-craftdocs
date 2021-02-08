@@ -24,7 +24,7 @@ _path=$HOME'/Library/Containers/com.lukilabs.lukiapp/Data/Library/Application Su
 # main database
 _filename=$(ls "$_path" | grep 'LukiMain.*realm$' | grep -v '\|' | head -n 1)
 
-_spaceID=$(echo "$_filename" | cut -d_ -f2)
+export _spaceID=$(echo "$_filename" | cut -d_ -f2)
 _copybase="workflow_$_spaceID.realm"
 
 _orig_db_path="$_path/$_filename"
@@ -46,5 +46,3 @@ else
     store_last_modified "$_orig_db_path" "$_orig_db_stat_snapshot"
   fi
 fi
-
-node alfred-craftdocs/index.js "$_spaceID" search "$@"

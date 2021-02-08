@@ -1,7 +1,7 @@
 const BLOCK_DATA_MODEL = 'BlockDataModel';
 const DOC_DATA_MODEL = 'DocumentDataModel';
 
-module.exports.search = ({conn, spaceID, argv}) => {
+module.exports = ({conn, spaceID, argv}) => {
   const entries = conn
     .objects(BLOCK_DATA_MODEL)
     .filtered('content contains[c] $0 limit(40)', argv.join(' '))
