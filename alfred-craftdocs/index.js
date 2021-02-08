@@ -1,5 +1,6 @@
 const os = require('os');
 const fs = require('fs');
+const dateformat = require('dateformat');
 
 let Realm;
 try {
@@ -11,6 +12,7 @@ try {
 
 const search = require('./search');
 const folders = require('./folders');
+const findDocument = require('./findDocument');
 
 const argv = process.argv.slice(2);
 const spaceID = argv.shift();
@@ -70,11 +72,21 @@ switch (cmd) {
       break;
     }
 
+    const title = dateformat(new Date(), process.env.TODAY_PATTERN);
+    const block = findDocument({conn, folderID: cfg.default_folder, title});
 
-    process.stdout.write(
-      `craftdocs://x-callback-url/createdocument?spaceId=${spaceID}&folderId=${cfg.default_folder}&title=lalala&content=`
-    )
+    if (!block) {
+      process.stdout.write(`craftdocs://x-callback-url/createdocument?spaceId=${spaceID}&folderId=${cfg.default_folder}&title=${title}&content=`);
+    } else {
+      process.stdout.write(`craftdocs://open?blockId=${block.id}&spaceId=${spaceID}`);
+    }
 
+    break;
+
+  case 'test':
+    let buff2 = fs.readFileSync('./workflow_config.json')
+    let cfg2 = JSON.parse(buff2.toString());
+    console.log(findDocument({conn, folderID: cfg2.default_folder}));
     break;
 
   default:
