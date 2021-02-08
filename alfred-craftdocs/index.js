@@ -1,7 +1,3 @@
-const os = require('os');
-const fs = require('fs');
-const dateformat = require('dateformat');
-
 let Realm;
 try {
   Realm = require('realm');
@@ -10,6 +6,10 @@ try {
   process.exit();
 }
 
+const os = require('os');
+const fs = require('fs');
+const dateformat = require('dateformat');
+
 const search = require('./search');
 const folders = require('./folders');
 const findDocument = require('./findDocument');
@@ -17,6 +17,8 @@ const findDocument = require('./findDocument');
 const argv = process.argv.slice(2);
 const spaceID = argv.shift();
 const cmd = argv.shift();
+
+const title = dateformat(new Date(), process.env.TODAY_PATTERN);
 
 const filepath = `${os.homedir()}/Library/Containers/com.lukilabs.lukiapp/Data/Library/Application Support/com.lukilabs.lukiapp/workflow_${spaceID}.realm`;
 const conn = new Realm(filepath);
@@ -30,7 +32,7 @@ switch (cmd) {
     break;
 
   case 'cdo':
-    items = [{title: 'today', subtitle: '', arg: 'today'}];
+    items = [{title: 'today', subtitle: 'Jump to or create note ' + title, arg: 'today'}];
     break;
 
   case 'config-select':
@@ -80,7 +82,6 @@ switch (cmd) {
       break;
     }
 
-    const title = dateformat(new Date(), process.env.TODAY_PATTERN);
     const block = findDocument({conn, folderID: cfg.default_folder, title});
 
     if (!block) {
