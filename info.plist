@@ -23,6 +23,19 @@
 				<false/>
 			</dict>
 		</array>
+		<key>33DCE141-7330-45BC-B11C-B828F3E3B0BA</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>4E6BADC0-25E0-4BA8-9D6B-A12D1A806C75</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
 		<key>4E6BADC0-25E0-4BA8-9D6B-A12D1A806C75</key>
 		<array>
 			<dict>
@@ -41,32 +54,6 @@
 			<dict>
 				<key>destinationuid</key>
 				<string>C6750802-4988-4675-A676-BA7A17E4FEF9</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-		</array>
-		<key>61FD2564-E7F5-417F-8F91-530062FAC018</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>0BEFA128-2DB7-4BAE-9E29-EA404D4AEE61</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-		</array>
-		<key>694B256E-086E-482F-A38E-F33BE8073D2E</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>4E6BADC0-25E0-4BA8-9D6B-A12D1A806C75</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -118,6 +105,19 @@
 			<dict>
 				<key>destinationuid</key>
 				<string>3A90E9C4-987A-42CF-AE89-CBE6D35CB22A</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>AF8E7D81-BE69-49EC-B2A2-A07FAAAB2DF2</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>0BEFA128-2DB7-4BAE-9E29-EA404D4AEE61</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -213,7 +213,7 @@
 				<key>argumenttype</key>
 				<integer>2</integer>
 				<key>keyword</key>
-				<string>craftdo-init</string>
+				<string>cdo-init</string>
 				<key>subtext</key>
 				<string>Pull dependencies</string>
 				<key>text</key>
@@ -437,31 +437,56 @@ node alfred-craftdocs/index.js "$_spaceID" today "$TODAY_PATTERN"</string>
 		<dict>
 			<key>config</key>
 			<dict>
+				<key>alfredfiltersresults</key>
+				<false/>
+				<key>alfredfiltersresultsmatchmode</key>
+				<integer>0</integer>
+				<key>argumenttreatemptyqueryasnil</key>
+				<true/>
 				<key>argumenttrimmode</key>
 				<integer>0</integer>
 				<key>argumenttype</key>
 				<integer>1</integer>
-				<key>fixedorder</key>
-				<false/>
-				<key>items</key>
-				<string>[{"title":"today","arg":"today"}]</string>
+				<key>escaping</key>
+				<integer>102</integer>
 				<key>keyword</key>
 				<string>cdo</string>
+				<key>queuedelaycustom</key>
+				<integer>3</integer>
+				<key>queuedelayimmediatelyinitially</key>
+				<true/>
+				<key>queuedelaymode</key>
+				<integer>0</integer>
+				<key>queuemode</key>
+				<integer>1</integer>
 				<key>runningsubtext</key>
+				<string>Loading...</string>
+				<key>script</key>
+				<string>#!/usr/bin/env bash
+set -e
+
+. preflight.sh
+
+node alfred-craftdocs/index.js "$_spaceID" cdo</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
 				<string></string>
 				<key>subtext</key>
 				<string></string>
 				<key>title</key>
-				<string></string>
+				<string>CraftDo command</string>
+				<key>type</key>
+				<integer>0</integer>
 				<key>withspace</key>
-				<true/>
+				<false/>
 			</dict>
 			<key>type</key>
-			<string>alfred.workflow.input.listfilter</string>
+			<string>alfred.workflow.input.scriptfilter</string>
 			<key>uid</key>
-			<string>61FD2564-E7F5-417F-8F91-530062FAC018</string>
+			<string>AF8E7D81-BE69-49EC-B2A2-A07FAAAB2DF2</string>
 			<key>version</key>
-			<integer>1</integer>
+			<integer>3</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -621,31 +646,56 @@ node alfred-craftdocs/index.js "$_spaceID" config $config_field $@
 		<dict>
 			<key>config</key>
 			<dict>
+				<key>alfredfiltersresults</key>
+				<false/>
+				<key>alfredfiltersresultsmatchmode</key>
+				<integer>0</integer>
+				<key>argumenttreatemptyqueryasnil</key>
+				<true/>
 				<key>argumenttrimmode</key>
 				<integer>0</integer>
 				<key>argumenttype</key>
 				<integer>1</integer>
-				<key>fixedorder</key>
-				<false/>
-				<key>items</key>
-				<string>[{"title":"Default folder","arg":"default_folder"}]</string>
+				<key>escaping</key>
+				<integer>102</integer>
 				<key>keyword</key>
 				<string>cdo-config</string>
+				<key>queuedelaycustom</key>
+				<integer>3</integer>
+				<key>queuedelayimmediatelyinitially</key>
+				<true/>
+				<key>queuedelaymode</key>
+				<integer>0</integer>
+				<key>queuemode</key>
+				<integer>1</integer>
 				<key>runningsubtext</key>
+				<string>Loading...</string>
+				<key>script</key>
+				<string>#!/usr/bin/env bash
+set -e
+
+. preflight.sh
+
+node alfred-craftdocs/index.js "$_spaceID" config-select</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
 				<string></string>
 				<key>subtext</key>
 				<string></string>
 				<key>title</key>
-				<string></string>
+				<string>Select attribute for configuration</string>
+				<key>type</key>
+				<integer>0</integer>
 				<key>withspace</key>
-				<true/>
+				<false/>
 			</dict>
 			<key>type</key>
-			<string>alfred.workflow.input.listfilter</string>
+			<string>alfred.workflow.input.scriptfilter</string>
 			<key>uid</key>
-			<string>694B256E-086E-482F-A38E-F33BE8073D2E</string>
+			<string>33DCE141-7330-45BC-B11C-B828F3E3B0BA</string>
 			<key>version</key>
-			<integer>1</integer>
+			<integer>3</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -686,6 +736,13 @@ node alfred-craftdocs/index.js "$_spaceID" config $config_field $@
 			<key>ypos</key>
 			<integer>175</integer>
 		</dict>
+		<key>33DCE141-7330-45BC-B11C-B828F3E3B0BA</key>
+		<dict>
+			<key>xpos</key>
+			<integer>130</integer>
+			<key>ypos</key>
+			<integer>595</integer>
+		</dict>
 		<key>3A90E9C4-987A-42CF-AE89-CBE6D35CB22A</key>
 		<dict>
 			<key>xpos</key>
@@ -711,20 +768,6 @@ node alfred-craftdocs/index.js "$_spaceID" config $config_field $@
 		<dict>
 			<key>xpos</key>
 			<integer>500</integer>
-			<key>ypos</key>
-			<integer>595</integer>
-		</dict>
-		<key>61FD2564-E7F5-417F-8F91-530062FAC018</key>
-		<dict>
-			<key>xpos</key>
-			<integer>130</integer>
-			<key>ypos</key>
-			<integer>455</integer>
-		</dict>
-		<key>694B256E-086E-482F-A38E-F33BE8073D2E</key>
-		<dict>
-			<key>xpos</key>
-			<integer>130</integer>
 			<key>ypos</key>
 			<integer>595</integer>
 		</dict>
@@ -755,6 +798,13 @@ node alfred-craftdocs/index.js "$_spaceID" config $config_field $@
 			<integer>555</integer>
 			<key>ypos</key>
 			<integer>175</integer>
+		</dict>
+		<key>AF8E7D81-BE69-49EC-B2A2-A07FAAAB2DF2</key>
+		<dict>
+			<key>xpos</key>
+			<integer>125</integer>
+			<key>ypos</key>
+			<integer>455</integer>
 		</dict>
 		<key>C6750802-4988-4675-A676-BA7A17E4FEF9</key>
 		<dict>

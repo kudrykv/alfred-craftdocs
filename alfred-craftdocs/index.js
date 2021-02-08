@@ -29,6 +29,14 @@ switch (cmd) {
     items = search({conn, spaceID, argv})
     break;
 
+  case 'cdo':
+    items = [{title: 'today', subtitle: '', arg: 'today'}];
+    break;
+
+  case 'config-select':
+    items = [{title: 'Default folder', subtitle: 'A folder to place new notes', arg: 'default_folder'}];
+    break;
+
   case 'config':
     switch (argv.shift()) {
       case 'default_folder':
