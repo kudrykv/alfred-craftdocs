@@ -2,7 +2,7 @@ module.exports = ({cfg, todayNoteTitle}) => {
   let item = {
     title: 'today - create a note for today',
     subtitle: 'Setup the default folder first',
-    arg: 'today',
+    arg: 'cdo-today',
     valid: false,
   };
 

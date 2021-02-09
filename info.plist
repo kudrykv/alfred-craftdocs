@@ -8,21 +8,6 @@
 	<string>Productivity</string>
 	<key>connections</key>
 	<dict>
-		<key>0BEFA128-2DB7-4BAE-9E29-EA404D4AEE61</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>9BFF11E2-F02E-4964-89EF-F56FFD5023F6</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>sourceoutputuid</key>
-				<string>BD16AC78-B211-4756-82B4-5B695B700716</string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-		</array>
 		<key>33DCE141-7330-45BC-B11C-B828F3E3B0BA</key>
 		<array>
 			<dict>
@@ -117,7 +102,7 @@
 		<array>
 			<dict>
 				<key>destinationuid</key>
-				<string>0BEFA128-2DB7-4BAE-9E29-EA404D4AEE61</string>
+				<string>9BFF11E2-F02E-4964-89EF-F56FFD5023F6</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -419,9 +404,9 @@ set -e
 
 . preflight.sh
 
-node alfred-craftdocs/index.js "$_spaceID" today "$TODAY_PATTERN"</string>
+node alfred-craftdocs/index.js "$_spaceID" {query} "$TODAY_PATTERN"</string>
 				<key>scriptargtype</key>
-				<integer>1</integer>
+				<integer>0</integer>
 				<key>scriptfile</key>
 				<string></string>
 				<key>type</key>
@@ -487,36 +472,6 @@ node alfred-craftdocs/index.js "$_spaceID" cdo</string>
 			<string>AF8E7D81-BE69-49EC-B2A2-A07FAAAB2DF2</string>
 			<key>version</key>
 			<integer>3</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>conditions</key>
-				<array>
-					<dict>
-						<key>inputstring</key>
-						<string>{query}</string>
-						<key>matchcasesensitive</key>
-						<false/>
-						<key>matchmode</key>
-						<integer>0</integer>
-						<key>matchstring</key>
-						<string>today</string>
-						<key>outputlabel</key>
-						<string></string>
-						<key>uid</key>
-						<string>BD16AC78-B211-4756-82B4-5B695B700716</string>
-					</dict>
-				</array>
-				<key>elselabel</key>
-				<string>else</string>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.utility.conditional</string>
-			<key>uid</key>
-			<string>0BEFA128-2DB7-4BAE-9E29-EA404D4AEE61</string>
-			<key>version</key>
-			<integer>1</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -699,13 +654,6 @@ node alfred-craftdocs/index.js "$_spaceID" config-edit</string>
 	<string></string>
 	<key>uidata</key>
 	<dict>
-		<key>0BEFA128-2DB7-4BAE-9E29-EA404D4AEE61</key>
-		<dict>
-			<key>xpos</key>
-			<integer>280</integer>
-			<key>ypos</key>
-			<integer>490</integer>
-		</dict>
 		<key>1D55AFF8-5B0B-473C-9C31-5E79E7D1DC72</key>
 		<dict>
 			<key>xpos</key>
@@ -760,7 +708,7 @@ node alfred-craftdocs/index.js "$_spaceID" config-edit</string>
 		<key>9BFF11E2-F02E-4964-89EF-F56FFD5023F6</key>
 		<dict>
 			<key>xpos</key>
-			<integer>355</integer>
+			<integer>275</integer>
 			<key>ypos</key>
 			<integer>470</integer>
 		</dict>
@@ -815,7 +763,7 @@ node alfred-craftdocs/index.js "$_spaceID" config-edit</string>
 			<key>note</key>
 			<string>open "$@"</string>
 			<key>xpos</key>
-			<integer>555</integer>
+			<integer>475</integer>
 			<key>ypos</key>
 			<integer>325</integer>
 		</dict>
