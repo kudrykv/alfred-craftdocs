@@ -13,7 +13,7 @@ GUI applications do not inherit `$PATH`, and the workflow searches though these 
 
 
 ## Install
-[Download](https://github.com/kudrykv/alfred-craftdocs/releases/download/v0.2.1/Craft_Docs_v0.2.1.alfredworkflow)
+[Download](https://github.com/kudrykv/alfred-craftdocs/releases/download/v0.2.2/Craft_Docs_v0.2.2.alfredworkflow)
 the latest release and double-click it.
 Alfred will proceed with installation.
 
