@@ -38,18 +38,21 @@ switch (cmd) {
     break;
 
   case 'cdo':
-    workflowCfg.default_folder
-      ? items.push({
-        title: 'today - create a note for today',
+    let item = {
+      title: 'today - create a note for today',
+      subtitle: 'Setup the default folder first',
+      arg: 'today',
+      valid: false,
+    };
+
+    if (workflowCfg.default_folder) {
+      item = Object.assign(item, {
         subtitle: 'Jump to or create ' + todayNoteTitle + ' note in ' + workflowCfg.default_folder.name,
-        arg: 'today'
+        valid: true
       })
-      : items.push({
-        title: 'today - create a note for today',
-        subtitle: 'Setup the default folder first',
-        arg: 'today',
-        valid: false
-      });
+    }
+
+    items.push(item);
 
     break;
 
