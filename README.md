@@ -37,6 +37,10 @@ Run `cdo` and select "today" to create daily note.
 You weill need to configure the default folder for storing these notes though.
 To do that, run `cdconf`.
 
+To configure the pattern for today's note, open the workflow variables in the Alfred.
+
+![](example-edit-wf_var.png)
+
 ## Configuration
 Run `cdconf` to configure some workflow values.
 
