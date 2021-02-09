@@ -198,7 +198,7 @@
 				<key>argumenttype</key>
 				<integer>2</integer>
 				<key>keyword</key>
-				<string>cdo-init</string>
+				<string>cdinit</string>
 				<key>subtext</key>
 				<string>Pull dependencies</string>
 				<key>text</key>
@@ -651,7 +651,7 @@ node alfred-craftdocs/index.js "$_spaceID" config-edit</string>
 		</dict>
 	</array>
 	<key>readme</key>
-	<string></string>
+	<string>Search through Craft Documents</string>
 	<key>uidata</key>
 	<dict>
 		<key>1D55AFF8-5B0B-473C-9C31-5E79E7D1DC72</key>
@@ -773,8 +773,10 @@ node alfred-craftdocs/index.js "$_spaceID" config-edit</string>
 		<key>TODAY_PATTERN</key>
 		<string>%Y-%m-%d</string>
 	</dict>
+	<key>variablesdontexport</key>
+	<array/>
 	<key>version</key>
-	<string>0.1.1</string>
+	<string>0.2.0</string>
 	<key>webaddress</key>
 	<string>https://github.com/kudrykv/alfred-craftdocs</string>
 </dict>
