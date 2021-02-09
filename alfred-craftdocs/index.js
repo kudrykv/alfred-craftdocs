@@ -1,6 +1,8 @@
 let Realm;
+let strftime;
 try {
   Realm = require('realm');
+  strftime = require('strftime');
 } catch (e) {
   console.log(JSON.stringify({items: [{title: 'Please initialize the workflow', valid: false}]}));
   process.exit();
@@ -18,7 +20,6 @@ const filepath = homedir()
 const conn = new Realm(filepath);
 
 const fs = require('fs');
-const strftime = require('strftime');
 const app = require('./app');
 const todayNoteTitle = strftime(process.env.TODAY_PATTERN);
 
