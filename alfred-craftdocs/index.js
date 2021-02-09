@@ -9,7 +9,8 @@ try {
 const argv = process.argv.slice(2);
 const spaceID = argv.shift();
 const cmd = argv.shift();
-const filepath = ${os.homedir()}
+const {homedir} = require('os');
+const filepath = homedir()
   +"/Library/Containers/com.lukilabs.lukiapp"
   + "/Data/Library/Application Support"
   + "/com.lukilabs.lukiapp/"

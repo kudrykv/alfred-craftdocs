@@ -636,7 +636,7 @@ node alfred-craftdocs/index.js "$_spaceID" config-edit-single $config_field $@
 				<key>escaping</key>
 				<integer>102</integer>
 				<key>keyword</key>
-				<string>cdo-config</string>
+				<string>cdconf</string>
 				<key>queuedelaycustom</key>
 				<integer>3</integer>
 				<key>queuedelayimmediatelyinitially</key>

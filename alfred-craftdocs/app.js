@@ -11,7 +11,7 @@ module.exports = ({conn, cfg, cmd,  spaceID, argv, todayNoteTitle}) => {
       return search({conn, spaceID, argv})
 
     case 'cdo':
-      return cdo({cfg});
+      return cdo({cfg, todayNoteTitle});
 
     case 'cdo-today':
       return cdoToday({conn, spaceID, todayNoteTitle});
