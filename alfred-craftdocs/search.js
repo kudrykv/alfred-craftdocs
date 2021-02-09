@@ -19,6 +19,7 @@ module.exports = ({conn, spaceID, argv}) => {
     let titleBlock = conn.objects(BLOCK_DATA_MODEL).filtered('id = $0', docRoot.rootBlockId).entries().next().value[1];
 
     items.push({
+      uid: bdm.id,
       title: bdm.content || titleBlock.content,
       subtitle: titleBlock.content,
       arg: `craftdocs://open?blockId=${bdm.id}&spaceId=${spaceID}`,
