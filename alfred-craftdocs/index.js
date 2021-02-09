@@ -8,7 +8,7 @@ try {
 
 const os = require('os');
 const fs = require('fs');
-const dateformat = require('dateformat');
+const strftime = require('strftime');
 
 const search = require('./search');
 const folders = require('./folders');
@@ -18,7 +18,7 @@ const argv = process.argv.slice(2);
 const spaceID = argv.shift();
 const cmd = argv.shift();
 
-const todayNoteTitle = dateformat(new Date(), process.env.TODAY_PATTERN);
+const todayNoteTitle = strftime(process.env.TODAY_PATTERN);
 
 const filepath = `${os.homedir()}/Library/Containers/com.lukilabs.lukiapp/Data/Library/Application Support/com.lukilabs.lukiapp/workflow_${spaceID}.realm`;
 const conn = new Realm(filepath);
@@ -53,11 +53,14 @@ switch (cmd) {
 
     break;
 
-  case 'config-select':
-    items = [{title: 'Default folder', subtitle: 'A folder to place new notes', arg: 'default_folder'}];
+  case 'config-edit':
+    let subtitle = 'A folder to place new notes';
+    workflowCfg.default_folder && (subtitle += ' (' + workflowCfg.default_folder.name + ')');
+
+    items = [{title: 'Default folder', subtitle: subtitle, arg: 'default_folder'}];
     break;
 
-  case 'config':
+  case 'config-edit-single':
     switch (argv.shift()) {
       case 'default_folder':
         items = folders({conn, spaceID, argv});
@@ -108,12 +111,6 @@ switch (cmd) {
       process.stdout.write(`craftdocs://open?blockId=${block.id}&spaceId=${spaceID}`);
     }
 
-    break;
-
-  case 'test':
-    let buff2 = fs.readFileSync('./workflow_config.json')
-    let cfg2 = JSON.parse(buff2.toString());
-    console.log(findDocument({conn, folderID: cfg2.default_folder}));
     break;
 
   default:

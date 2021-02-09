@@ -104,7 +104,7 @@
 		<array>
 			<dict>
 				<key>destinationuid</key>
-				<string>3A90E9C4-987A-42CF-AE89-CBE6D35CB22A</string>
+				<string>EC8B284B-3008-471C-AF51-4DCA8AA9416D</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -342,9 +342,9 @@ echo 0</string>
 				<key>escaping</key>
 				<integer>102</integer>
 				<key>script</key>
-				<string>open "{query}"</string>
+				<string>open "$@"</string>
 				<key>scriptargtype</key>
-				<integer>0</integer>
+				<integer>1</integer>
 				<key>scriptfile</key>
 				<string></string>
 				<key>type</key>
@@ -491,29 +491,6 @@ node alfred-craftdocs/index.js "$_spaceID" cdo</string>
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>concurrently</key>
-				<false/>
-				<key>escaping</key>
-				<integer>102</integer>
-				<key>script</key>
-				<string>open "$@"</string>
-				<key>scriptargtype</key>
-				<integer>1</integer>
-				<key>scriptfile</key>
-				<string></string>
-				<key>type</key>
-				<integer>0</integer>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.script</string>
-			<key>uid</key>
-			<string>3A90E9C4-987A-42CF-AE89-CBE6D35CB22A</string>
-			<key>version</key>
-			<integer>2</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
 				<key>conditions</key>
 				<array>
 					<dict>
@@ -621,7 +598,7 @@ set -e
 
 . preflight.sh
 
-node alfred-craftdocs/index.js "$_spaceID" config $config_field $@
+node alfred-craftdocs/index.js "$_spaceID" config-edit-single $config_field $@
 </string>
 				<key>scriptargtype</key>
 				<integer>1</integer>
@@ -676,7 +653,7 @@ set -e
 
 . preflight.sh
 
-node alfred-craftdocs/index.js "$_spaceID" config-select</string>
+node alfred-craftdocs/index.js "$_spaceID" config-edit</string>
 				<key>scriptargtype</key>
 				<integer>1</integer>
 				<key>scriptfile</key>
@@ -684,7 +661,7 @@ node alfred-craftdocs/index.js "$_spaceID" config-select</string>
 				<key>subtext</key>
 				<string></string>
 				<key>title</key>
-				<string>Select attribute for configuration</string>
+				<string>List or edit configuration</string>
 				<key>type</key>
 				<integer>0</integer>
 				<key>withspace</key>
@@ -727,7 +704,7 @@ node alfred-craftdocs/index.js "$_spaceID" config-select</string>
 			<key>xpos</key>
 			<integer>280</integer>
 			<key>ypos</key>
-			<integer>475</integer>
+			<integer>490</integer>
 		</dict>
 		<key>1D55AFF8-5B0B-473C-9C31-5E79E7D1DC72</key>
 		<dict>
@@ -741,14 +718,7 @@ node alfred-craftdocs/index.js "$_spaceID" config-select</string>
 			<key>xpos</key>
 			<integer>130</integer>
 			<key>ypos</key>
-			<integer>595</integer>
-		</dict>
-		<key>3A90E9C4-987A-42CF-AE89-CBE6D35CB22A</key>
-		<dict>
-			<key>xpos</key>
-			<integer>505</integer>
-			<key>ypos</key>
-			<integer>455</integer>
+			<integer>625</integer>
 		</dict>
 		<key>3F51AE90-DF48-4EBC-B316-35FB418BAFE7</key>
 		<dict>
@@ -760,23 +730,25 @@ node alfred-craftdocs/index.js "$_spaceID" config-select</string>
 		<key>4E6BADC0-25E0-4BA8-9D6B-A12D1A806C75</key>
 		<dict>
 			<key>xpos</key>
-			<integer>280</integer>
+			<integer>275</integer>
 			<key>ypos</key>
-			<integer>625</integer>
+			<integer>655</integer>
 		</dict>
 		<key>54DED774-88D5-4B90-A0EC-5398FD47C6AF</key>
 		<dict>
 			<key>xpos</key>
-			<integer>500</integer>
+			<integer>490</integer>
 			<key>ypos</key>
-			<integer>595</integer>
+			<integer>625</integer>
 		</dict>
 		<key>7A359505-AEF9-4F80-BCD5-5C2B3C6435C3</key>
 		<dict>
+			<key>note</key>
+			<string>Search notes</string>
 			<key>xpos</key>
 			<integer>130</integer>
 			<key>ypos</key>
-			<integer>320</integer>
+			<integer>325</integer>
 		</dict>
 		<key>81D4901E-77A6-40F1-9564-88EE46A4B5C3</key>
 		<dict>
@@ -790,7 +762,7 @@ node alfred-craftdocs/index.js "$_spaceID" config-select</string>
 			<key>xpos</key>
 			<integer>355</integer>
 			<key>ypos</key>
-			<integer>455</integer>
+			<integer>470</integer>
 		</dict>
 		<key>A40516EA-67B9-42EB-A330-D3161752B676</key>
 		<dict>
@@ -801,20 +773,24 @@ node alfred-craftdocs/index.js "$_spaceID" config-select</string>
 		</dict>
 		<key>AF8E7D81-BE69-49EC-B2A2-A07FAAAB2DF2</key>
 		<dict>
+			<key>note</key>
+			<string>Run command</string>
 			<key>xpos</key>
-			<integer>125</integer>
+			<integer>130</integer>
 			<key>ypos</key>
-			<integer>455</integer>
+			<integer>470</integer>
 		</dict>
 		<key>C6750802-4988-4675-A676-BA7A17E4FEF9</key>
 		<dict>
 			<key>xpos</key>
-			<integer>650</integer>
+			<integer>635</integer>
 			<key>ypos</key>
-			<integer>595</integer>
+			<integer>625</integer>
 		</dict>
 		<key>C6916E88-54C2-4A84-B302-C007FA7C61C8</key>
 		<dict>
+			<key>note</key>
+			<string>Initialize the workflow: run the `npm install`</string>
 			<key>xpos</key>
 			<integer>130</integer>
 			<key>ypos</key>
@@ -823,9 +799,9 @@ node alfred-craftdocs/index.js "$_spaceID" config-select</string>
 		<key>E5AAECBB-5EE2-49FF-A6CE-960CF11CF5D3</key>
 		<dict>
 			<key>xpos</key>
-			<integer>350</integer>
+			<integer>345</integer>
 			<key>ypos</key>
-			<integer>595</integer>
+			<integer>625</integer>
 		</dict>
 		<key>EA93CFF4-E14C-4988-98C5-CF660B100672</key>
 		<dict>
@@ -836,16 +812,18 @@ node alfred-craftdocs/index.js "$_spaceID" config-select</string>
 		</dict>
 		<key>EC8B284B-3008-471C-AF51-4DCA8AA9416D</key>
 		<dict>
+			<key>note</key>
+			<string>open "$@"</string>
 			<key>xpos</key>
-			<integer>320</integer>
+			<integer>555</integer>
 			<key>ypos</key>
-			<integer>320</integer>
+			<integer>325</integer>
 		</dict>
 	</dict>
 	<key>variables</key>
 	<dict>
 		<key>TODAY_PATTERN</key>
-		<string>yyyy-mm-dd</string>
+		<string>%Y-%m-%d</string>
 	</dict>
 	<key>version</key>
 	<string>0.1.1</string>
