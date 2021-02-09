@@ -771,7 +771,7 @@ node alfred-craftdocs/index.js "$_spaceID" config-edit</string>
 	<key>variables</key>
 	<dict>
 		<key>TODAY_PATTERN</key>
-		<string>%Y-%m-%d</string>
+		<string>%a, %-d %B %Y</string>
 	</dict>
 	<key>variablesdontexport</key>
 	<array/>

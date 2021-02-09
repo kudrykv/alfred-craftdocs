@@ -17,5 +17,5 @@ module.exports = ({conn, spaceID, todayNoteTitle}) => {
 
   return block
     ? `craftdocs://open?blockId=${block.id}&spaceId=${spaceID}`
-    : `craftdocs://x-callback-url/createdocument?spaceId=${spaceID}&folderId=${cfg.default_folder.id}&title=${todayNoteTitle}&content=`
+    : `craftdocs://x-callback-url/createdocument?spaceId=${spaceID}&folderId=${cfg.default_folder.id}&title=${encodeURIComponent(todayNoteTitle)}&content=`
 }
