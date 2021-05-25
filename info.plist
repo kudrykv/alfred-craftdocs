@@ -770,11 +770,11 @@ node alfred-craftdocs/index.js "$_spaceID" config-edit</string>
 	</dict>
 	<key>variables</key>
 	<dict>
+		<key>PATHS</key>
+		<string>/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin</string>
 		<key>TODAY_PATTERN</key>
 		<string>%a, %-d %B %Y</string>
 	</dict>
-	<key>variablesdontexport</key>
-	<array/>
 	<key>version</key>
 	<string>0.2.3</string>
 	<key>webaddress</key>

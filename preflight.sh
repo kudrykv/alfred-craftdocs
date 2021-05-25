@@ -1,7 +1,11 @@
 #!/usr/bin/env bash
 set -e
 
-PATH=/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:$PATH
+# shellcheck disable=SC2153
+if [ -n "${PATHS}" ]; then
+  PATH=${PATHS}:$PATH
+fi
+
 export PATH=$PATH
 
 _nodepath=$(command -v node || true)
