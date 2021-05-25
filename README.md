@@ -2,14 +2,18 @@
 Note search for [Craft Docs](https://www.craft.do) using [Alfred](https://www.alfredapp.com).
 
 ## Prerequisites
-You need Node to be installed and `node` and `npm` to be available in one of these places:
+You need Node to be installed.
+Search paths are specified in `PATHS` workflow variable.
+By default, it's these paths:
 * `/usr/local/bin`;
 * `/usr/bin`;
 * `/usr/sbin`;
 * `/bin`;
 * `/sbin`.
 
-GUI applications do not inherit `$PATH`, and the workflow searches though these dirs for the required binaries. 
+You may add yours by editing the `PATHS` workflow variable.
+
+Workflow does not inherit `$PATH`, hence it needs an explicit list of places to search. 
 
 
 ## Install
