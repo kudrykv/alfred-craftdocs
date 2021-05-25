@@ -17,7 +17,7 @@ Workflow does not inherit `$PATH`, hence it needs an explicit list of places to 
 
 
 ## Install
-[Download](https://github.com/kudrykv/alfred-craftdocs/releases/download/v0.2.3/Craft_Docs_v0.2.3.alfredworkflow)
+[Download](https://github.com/kudrykv/alfred-craftdocs/releases/download/v0.2.4/Craft_Docs_v0.2.4.alfredworkflow)
 the latest release and double-click it.
 Alfred will proceed with installation.
 
