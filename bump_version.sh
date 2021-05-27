@@ -44,5 +44,6 @@ _bump=${_major}.${_minor}.${_patch}
 
 sed -i'.old' -e "${_line_number}s/${_version}/${_bump}/" info.plist
 
+git add info.plist
 git commit -m "update version from ${_version} to ${_bump}"
-git tag -a "v${_bump}"
+git tag -a "v${_bump}" -m "v${_bump}"
