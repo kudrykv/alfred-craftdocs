@@ -42,6 +42,9 @@ esac
 
 _bump=${_major}.${_minor}.${_patch}
 
+echo "Current version is ${_version}"
+echo "Changing it to ${_bump}"
+
 sed -i'.old' -e "${_line_number}s/${_version}/${_bump}/" info.plist
 
 git add info.plist
