@@ -35,7 +35,7 @@ major)
   ;;
 
 *)
-  echo "unknown mod $1"
+  echo "Specify bump step: major, minor, or patch"
   exit 1
   ;;
 esac
