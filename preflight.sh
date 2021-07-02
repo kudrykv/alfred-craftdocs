@@ -23,7 +23,7 @@ function store_last_modified() {
 }
 
 # databases live here
-_path=$HOME'/Library/Containers/com.lukilabs.lukiapp/Data/Library/Application Support/com.lukilabs.lukiapp'
+_path=$HOME'/Library/Group Containers/group.com.lukilabs.lukiapp.share/Realms'
 
 # main database
 _filename=$(ls "$_path" | grep 'LukiMain.*realm$' | grep -v '\|' | head -n 1)

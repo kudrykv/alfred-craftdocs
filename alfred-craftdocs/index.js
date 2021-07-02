@@ -13,9 +13,7 @@ const spaceID = argv.shift();
 const cmd = argv.shift();
 const {homedir} = require('os');
 const filepath = homedir()
-  +"/Library/Containers/com.lukilabs.lukiapp"
-  + "/Data/Library/Application Support"
-  + "/com.lukilabs.lukiapp/"
+  + "/Library/Group Containers/group.com.lukilabs.lukiapp.share/Realms/"
   + "workflow_" + spaceID + ".realm";
 const conn = new Realm(filepath);
 
