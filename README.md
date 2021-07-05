@@ -1,6 +1,8 @@
 # Craft Docs Workflow
 Note search for [Craft Docs](https://www.craft.do) using [Alfred](https://www.alfredapp.com).
 
+Alternative workflow — [CraftDocs SearchIndex](https://github.com/kudrykv/alfred-craftdocs-searchindex).
+
 ## Prerequisites
 You need Node to be installed.
 Search paths are specified in `PATHS` workflow variable.
