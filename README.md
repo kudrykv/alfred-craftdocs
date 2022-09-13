@@ -1,7 +1,16 @@
 # Craft Docs Workflow
+
 Note search for [Craft Docs](https://www.craft.do) using [Alfred](https://www.alfredapp.com).
 
+---
+
+#### Alternative references
+
 Alternative workflow — [CraftDocs SearchIndex](https://github.com/kudrykv/alfred-craftdocs-searchindex).
+
+[Craft extension](https://www.raycast.com/bgnfu7re/craftdocs) for [Raycast](https://www.raycast.com/).
+
+---
 
 ## Prerequisites
 You need Node to be installed.
